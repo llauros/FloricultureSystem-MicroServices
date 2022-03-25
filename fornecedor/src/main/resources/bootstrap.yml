@@ -1,0 +1,11 @@
+#Esse arquivo será lido em um contexto anterior ao contexto de inicialização da aplicação
+#Quando a aplicação subir e for ler a application.yml, o bootstrap já foi lido e processado
+#Condifguração de acesso ao Config-Server
+spring:
+  application:
+    name: 'fornecedor'
+  profiles:
+    active: default
+  cloud:
+    config:
+      uri: http://localhost:8888
